@@ -16,15 +16,14 @@ val appModules = module {
 
     single {
         createRetrofit(
-            baseUrl = "https://api.openweathermap.org/data/",
+            baseUrl = "https://api.openweathermap.org/data/2.5/",
             get()
         )
     }
-    viewModel { SharedViewModel(apiService = get()) }
 
+    viewModel { SharedViewModel(apiService = get()) }
 
 }
 
 fun getDynamicURl(baseUrl:String){
-
 }

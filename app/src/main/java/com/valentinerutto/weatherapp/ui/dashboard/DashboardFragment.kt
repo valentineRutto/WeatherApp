@@ -16,6 +16,7 @@ class DashboardFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
     private val sharedViewmodel by viewModel<SharedViewModel>()
 
     override fun onCreateView(
